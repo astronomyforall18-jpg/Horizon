@@ -1,15 +1,17 @@
 {
   "ai": {
-    "provider": "deepseek",
-    "model": "deepseek-v4-flash",
-    "base_url": "https://api.deepseek.com",
-    "api_key_env": "DEEPSEEK_API_KEY",
-    "temperature": 0.3,
-    "max_tokens": 8192,
-    "throttle_sec": 1,
-    "languages": [
-      "zh",
-      "en"
+  "provider": "gemini",
+  "model": "gemini-2.0-flash",
+  "api_key_env": "GOOGLE_API_KEY",
+  "temperature": 0.3,
+  "max_tokens": 8192,
+  "throttle_sec": 4.5,
+  "languages": [
+    "en"
+  ],
+  "analysis_concurrency": 1,
+  "enrichment_concurrency": 1
+},
     ],
     "analysis_concurrency": 5,
     "enrichment_concurrency": 5
